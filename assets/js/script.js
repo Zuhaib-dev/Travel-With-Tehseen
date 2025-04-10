@@ -88,3 +88,8 @@ const dropdown = document.getElementById('destinationOptions');
             function closePopup() {
               document.getElementById("packagePopup").style.display = "none";
             }
+            // js for prevebting menu apperance
+            document.addEventListener('contextmenu', function (e) {
+              e.preventDefault();
+            });
+            
