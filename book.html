@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="transition duration-300">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kashmir Tour Packages</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- favicon -->
+     <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            animation: {
+              fade: "fadeIn 1.5s ease-in-out",
+              slide: "slideIn 0.3s ease-in-out",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideIn: {
+                "0%": { transform: "translateX(-100%)" },
+                "100%": { transform: "translateX(0)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+    <!-- font -->
+     <style>
+      html {
+        font-family: "Special Elite", cursive;
+      }
+     </style>
+  <body
+    class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition duration-300"
+  >
+    <!-- Header -->
+    <header
+      class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <h1 class="text-2xl font-bold text-green-600 dark:text-green-400">
+          <img src="./assets/images/logo-blue.svg" alt="" />
+        </h1>
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="index.html"
+            class="hover:text-green-600 dark:hover:text-green-400 transition"
+            >Home</a
+          >
+          <a
+            href="https://zuhaib-dev.github.io/Friend-circle/photo%20Galarry/Memories%20in%20Frames.html"
+            class="hover:text-green-600 dark:hover:text-green-400 transition"
+            >Gallery</a
+          >
+          <a
+            href="tel:+917889464616"
+            class="block hover:text-green-600 dark:hover:text-green-400"
+            >Contact Us</a
+          >
+        </nav>
+        <div class="md:hidden">
+          <button id="menuBtn" class="text-2xl focus:outline-none">☰</button>
+        </div>
+      </div>
+      <div
+        id="mobileMenu"
+        class="fixed top-0 left-0 w-64 bg-white dark:bg-gray-800 h-full shadow-md transform -translate-x-full transition-transform duration-300 z-50"
+      >
+        <div
+          class="p-4 flex justify-between items-center border-b dark:border-gray-700"
+        >
+          <h2 class="text-xl font-bold text-green-600 dark:text-green-400">
+            <img src="./assets/images/logo-blue.svg" alt="" />
+          </h2>
+          <button id="closeMenu" class="text-2xl">×</button>
+        </div>
+        <nav class="p-4 space-y-4">
+          <a
+            href="index.html"
+            class="block hover:text-green-600 dark:hover:text-green-400"
+            >Home</a
+          >
+          <a
+            href="https://zuhaib-dev.github.io/Friend-circle/photo%20Galarry/Memories%20in%20Frames.html"
+            class="block hover:text-green-600 dark:hover:text-green-400"
+            >Gallery</a
+          >
+          <a
+            href="tel:+917889464616"
+            class="block hover:text-green-600 dark:hover:text-green-400"
+            >Contact Us</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="text-center py-12 bg-gradient-to-r from-green-100 via-white to-green-100 dark:from-green-900 dark:via-gray-900 dark:to-green-900 transition"
+    >
+      <h2
+        class="text-4xl font-bold mb-4 text-green-700 dark:text-green-300 animate-fade"
+      >
+        Popular Packages
+      </h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300 animate-fade">
+        Explore our handpicked Kashmir packages for unforgettable adventures and
+        serene moments.
+      </p>
+    </section>
+
+    <!-- Tour Packages -->
+    <section
+      class="max-w-7xl mx-auto px-6 py-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2"
+    >
+      <div
+        class="bg-white dark:bg-gray-800 shadow rounded-lg p-6 animate-fade transition"
+      >
+        <img
+          src="./assets/images/Dal Lake.jpg"
+          alt="Kashmir"
+          class="w-full h-48 object-cover rounded mb-4"
+        />
+        <h3 class="text-xl font-bold text-green-600 dark:text-green-400 mb-2">
+          💛 Gold Package – Blissful Meadows Escape
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-2">4 Days / 3 Nights</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Gulmarg • Tangmarg • Drung Waterfall
+        </p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          500/- per person
+
+        </p>
+        <button
+          class="book-btn bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+          data-tour="Kashmir Gold Package"
+        >
+          Book Now
+        </button>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-800 shadow rounded-lg p-6 animate-fade transition"
+      >
+        <img
+          src="./assets/images/Gulmarg.jpg"
+          alt="Gulmarg"
+          class="w-full h-48 object-cover rounded mb-4"
+        />
+        <h3 class="text-xl font-bold text-green-600 dark:text-green-400 mb-2">
+          🤍 Platinum Package – Valley Explorer Retreat
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-2">5 Days / 4 Nights</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Pahalgam • Aru Valley • Betaab Valley • Lidder River
+        </p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          1000/- per person
+
+        </p>
+        <button
+          class="book-btn bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+          data-tour="🤍 Platinum Package "
+        >
+          Book Now
+        </button>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-800 shadow rounded-lg p-6 animate-fade transition"
+      >
+        <img
+          src="./assets/images/Pahelgam.jpg"
+          alt="Sonmarg"
+          class="w-full h-48 object-cover rounded mb-4"
+        />
+        <h3 class="text-xl font-bold text-green-600 dark:text-green-400 mb-2">
+          💎 Diamond Package – Kashmir Grand Royale Tour
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-2">7 Days / 6 Nights</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Srinagar • Dal Lake • Sonamarg • Gulmarg • Pahalgam • Doodhpathri • Yusmarg • Mughal Gardens
+        </p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          5000/- per person
+
+        </p>
+        <button
+          class="book-btn bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+          data-tour="Diamond Package "
+        >
+          Book Now
+        </button>
+      </div>
+
+      <!-- <div
+        class="bg-white dark:bg-gray-800 shadow rounded-lg p-6 animate-fade transition"
+      >
+        <img
+          src="https://source.unsplash.com/600x400/?pahalgam"
+          alt="Pahalgam"
+          class="w-full h-48 object-cover rounded mb-4"
+        />
+        <h3 class="text-xl font-bold text-green-600 dark:text-green-400 mb-2">
+          Pahalgam Paradise
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-2">6 Days / 5 Nights</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Pahalgam - Aru Valley
+        </p>
+        <button
+          class="book-btn bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+          data-tour="Pahalgam Paradise"
+        >
+          Book Now
+        </button>
+      </div>
+    </section> -->
+
+    <!-- Booking Modal -->
+    <div
+    id="bookingModal"
+    class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 px-4"
+  >
+    <div
+      class="bg-white dark:bg-gray-800 rounded-lg p-6 w-full max-w-md sm:max-w-sm transition"
+    >
+      <h2 class="text-xl font-bold mb-4">Book Your Tour</h2>
+      <form action="https://formspree.io/f/xldjalop" method="POST" class="space-y-4">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          class="w-full px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600"
+          required
+          spellcheck="true"
+        />
+        <input type="tell" name="phone " numeric placeholder="Phone Number" class="w-full px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600" required maxlength="10" inputmode="numeric" pattern="[0-9]*" />
+        <input
+          type="number"
+          name="people"
+          placeholder="Number of People"
+          class="w-full px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600"
+          required
+        />
+        <input
+          type="date"
+          name="start_date"
+          class="w-full px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600"
+          required
+          placeholder="Start Date"
+        />
+        <input
+          type="date"
+          name="end_date"
+          class="w-full px-3 py-2 border rounded dark:bg-gray-700 dark:border-gray-600"
+          required
+        />
+        <input
+          type="text"
+          name="tour"
+          id="selectedTour"
+          class="w-full px-3 py-2 border rounded bg-gray-100 dark:bg-gray-700 dark:border-gray-600"
+          readonly
+        />
+        <button
+          type="submit"
+          class="bg-green-600 text-white px-4 py-2 rounded w-full hover:bg-green-700"
+        >
+          Book
+        </button>
+      </form>
+    </div>
+  </div>
+  
+
+    <!-- Footer -->
+    <footer
+      class="bg-white dark:bg-gray-800 border-t dark:border-gray-700 py-8 text-center transition"
+    >
+      <div class="max-w-7xl mx-auto flex flex-col items-center space-y-4">
+        <div class="flex space-x-6">
+          <a
+            href="https://www.instagram.com/tehseenbinakba/?igsh=MTJ2Y24ycW1xbDcxcg%3D%3D#"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/tehseenbin.akbar.14?rdid=xc2LCnVMKKTkmx4u&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Hx6XBXgGy%2F#"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition"
+            ><i data-feather="facebook"></i
+          ></a>
+          <a href="tel:+917889464616" class="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition"
+          ><i data-feather="phone"></i ></a>
+          <a
+            href="https://github.com/Zuhaib-dev/Projects.git"
+            class="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition"
+            ><i data-feather="github"></i
+          ></a>
+        </div>
+        <button
+          id="darkToggle"
+          class="mt-2 text-sm px-4 py-2 border border-green-600 rounded text-green-600 hover:bg-green-600 hover:text-white dark:text-green-400 dark:border-green-400 dark:hover:bg-green-400 dark:hover:text-gray-900 transition"
+        >
+          <i data-feather="moon"></i>
+        </button>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+          &copy; 2025 & 26  <a href="https://linktr.ee/zoh.eb__">Zuhaib Rashid</a>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      feather.replace();
+
+      const menuBtn = document.getElementById("menuBtn");
+      const closeMenu = document.getElementById("closeMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const bookingModal = document.getElementById("bookingModal");
+      const selectedTour = document.getElementById("selectedTour");
+      const darkToggle = document.getElementById("darkToggle");
+
+      // Mobile nav
+      menuBtn.addEventListener("click", () =>
+        mobileMenu.classList.remove("-translate-x-full")
+      );
+      closeMenu.addEventListener("click", () =>
+        mobileMenu.classList.add("-translate-x-full")
+      );
+
+      // Booking modal
+      document.querySelectorAll(".book-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          selectedTour.value = btn.dataset.tour;
+          bookingModal.classList.remove("hidden");
+          bookingModal.classList.add("flex");
+        });
+      });
+      bookingModal.addEventListener("click", (e) => {
+        if (e.target === bookingModal) {
+          bookingModal.classList.add("hidden");
+          bookingModal.classList.remove("flex");
+        }
+      });
+
+      // Dark mode toggle
+      darkToggle.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          document.documentElement.classList.contains("dark") ? "dark" : "light"
+        );
+      });
+
+      // Set initial theme
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+  </body>
+</html>

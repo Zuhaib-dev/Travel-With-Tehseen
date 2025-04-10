@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel - with Tehseen</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  </head>
+  <!-- font  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            special: ['"Special Elite"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+  <body class="font-special">
+    <!-- Your entire website will use Special Elite now -->
+  </body>
+  
+  
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-top">
+        <div class="container">
+          <a href="tel:+917889464616" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <div class="wrapper">
+              <p class="helpline-title">For Further Inquires :</p>
+
+              <p class="helpline-number">+917889464616</p>
+            </div>
+          </a>
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo" />
+          </a>
+
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
+            </button>
+
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://www.facebook.com/tehseenbin.akbar.14?rdid=xc2LCnVMKKTkmx4u&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Hx6XBXgGy%2F#"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/tehseenbinakba/?igsh=MTJ2Y24ycW1xbDcxcg%3D%3D#"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo-blue.svg" alt="Tourly logo" />
+              </a>
+
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>home</a>
+              </li>
+
+              <li>
+                <a href="#faq" class="navbar-link" data-nav-link>FAQ</a>
+              </li>
+
+              <li>
+                <a href="#destination" class="navbar-link" data-nav-link
+                  >destination</a
+                >
+              </li>
+
+              <li>
+                <a href="#package" class="navbar-link" data-nav-link
+                  >packages</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://zuhaib-dev.github.io/Friend-circle/photo%20Galarry/Memories%20in%20Frames.html"
+                  class="navbar-link"
+                  data-nav-link
+                  >gallery</a
+                >
+              </li>
+
+              <li>
+                <a href="tel:+917889464616" class="navbar-link" data-nav-link
+                  >Contact US!</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button id="book" class="btn btn-primary">
+            <a href="./book.html">Book Now</a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <h2 class="h1 hero-title">Journey to explore Kashmir</h2>
+
+            <p class="hero-text">
+              Explore the breathtaking beauty of Kashmir with Tehseen Bin Akbar
+              – your trusted guide to unforgettable journeys and local
+              adventures
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-primary"><a href="https://www.instagram.com/tehseenbinakba/?igsh=MTJ2Y24ycW1xbDcxcg%3D%3D#">See Our Tours</a></button>
+
+              <button class="btn btn-secondary"><a href="./book.html">BOOK Now</a></button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #TOUR SEARCH
+      -->
+
+        <section class="tour-search">
+          <div class="container">
+            <!-- Form starts here -->
+            <form
+              method="post"
+              action="https://formspree.io/f/xldjalop"
+              class="tour-search-form"
+            >
+              <!-- Custom Multi-Select -->
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"
+                  >Select Destinations*</label
+                >
+                <div class="multi-select-wrapper">
+                  <div
+                    class="custom-multiselect"
+                    onclick="toggleDropdown()"
+                  ></div>
+                  <div class="dropdown-options" id="destinationOptions">
+                    <div onclick="selectDestination('Gulmarg')">Gulmarg</div>
+                    <div onclick="selectDestination('Pahalgam')">Pahalgam</div>
+                    <div onclick="selectDestination('Sonamarg')">Sonamarg</div>
+                    <div onclick="selectDestination('Dal Lake')">Dal Lake</div>
+                    <div onclick="selectDestination('Betaab Valley')">
+                      Betaab Valley
+                    </div>
+                    <div onclick="selectDestination('Yusmarg')">Yusmarg</div>
+                    <div onclick="selectDestination('Aru Valley')">
+                      Aru Valley
+                    </div>
+                    <div onclick="selectDestination('Doodhpathri')">
+                      Doodhpathri
+                    </div>
+                    <div onclick="selectDestination('Verinag')">Verinag</div>
+                    <div onclick="selectDestination('Gurez Valley')">
+                      Gurez Valley
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  name="destination"
+                  id="destinationInput"
+                  hidden
+                  required
+                />
+              </div>
+
+              <!-- Pax Input -->
+              <div class="input-wrapper">
+                <label for="people" class="input-label">Pax Number*</label>
+                <input
+                  type="number"
+                  name="people"
+                  id="people"
+                  required
+                  placeholder="No. of People"
+                  class="input-field"
+                />
+              </div>
+              <!-- Contact info -->
+              <div class="input-wrapper">
+                <label for="contact" class="input-label">Phone Number</label>
+                <input
+                  type="tel"
+                  name="Phone"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  maxlength="10"
+                  id="Phone"
+                  required
+                  placeholder="Phone Number"
+                  class="input-field"
+                />
+              </div>
+
+              <!-- Check-in -->
+              <div class="input-wrapper">
+                <label for="checkin" class="input-label">Checkin Date*</label>
+                <input
+                  type="date"
+                  name="checkin"
+                  id="checkin"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <!-- Check-out -->
+              <div class="input-wrapper">
+                <label for="checkout" class="input-label">Checkout Date*</label>
+                <input
+                  type="date"
+                  name="checkout"
+                  id="checkout"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">
+                Inquire now
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- 
+        - #POPULAR
+      -->
+
+        <section class="popular" id="destination">
+          <div class="container">
+            <p class="section-subtitle">Uncover place</p>
+
+            <h2 class="h2 section-title">Popular destination</h2>
+
+            <p class="section-text">
+              Uncover the breathtaking beauty of Kashmir as you explore its top
+              tourist destinations, handpicked for unforgettable travel
+              experiences.
+            </p>
+
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/Dal Lake.jpg"
+                      alt="San miguel, italy"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Srinager</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">🚣‍♂️Dal Lake</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Iconic shikara rides through floating gardens and mountain
+                      reflections.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/Gulmarg.jpg"
+                      alt="Burj khalifa, dubai"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Baramulla</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">🌄 Gulmarg</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Snow-covered slopes invite skiers to nature’s most
+                      thrilling playground.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/Pahelgam.jpg"
+                      alt="Kyoto temple, japan"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Anantnag</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">🏞️ Pahalgam</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Serene valleys and rivers offer peace and scenic beauty.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button id="book" class="btn btn-primary">
+              <a href="./book.html">Book Now</a>
+            </button>
+          </div>
+        </section>
+
+        <!-- 
+        - #PACKAGE
+      -->
+
+        <section class="package" id="package">
+          <div class="container">
+            <p class="section-subtitle">Popular Packeges</p>
+
+            <h2 class="h2 section-title">Checkout Our Packeges</h2>
+
+            <p class="section-text">
+              Explore our handpicked Kashmir packages designed for unforgettable
+              moments. From snowy peaks to serene lakes, your perfect trip
+              starts here.
+            </p>
+
+            <ul class="package-list">
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-1.jpg"
+                      alt="Experience The Great Holiday On Beach"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      💛 Gold Package – Blissful Meadows Escape
+                    </h3>
+
+                    <p class="card-text">
+                      Enjoy snow adventures, gondola rides, and the icy charm of
+                      Drung. A perfect short trip for families and couples.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">4D/3N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 5</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">
+                            Gulmarg • Tangmarg • Drung Waterfall
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(18 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      $399
+                      <span>/ per person</span>
+                    </p>
+
+                    <button id="book" class="btn btn-secondary">
+                      <a href="./book.html">Book Now</a>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-2.jpg"
+                      alt="Summer Holiday To The Oxolotan River"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      🤍 Platinum Package – Valley Explorer Retreat
+                    </h3>
+
+                    <p class="card-text">
+                      Trek scenic trails, ride horses through valleys, and
+                      unwind by rivers. Great for nature lovers, friends, or
+                      honeymooners
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">5D/4N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 8</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">
+                            Pahalgam • Aru Valley • Betaab Valley • Lidder River
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(26 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      $520
+                      <span>/ per person</span>
+                    </p>
+
+                    <button id="book" class="btn btn-secondary">
+                      <a href="./book.html">Book Now</a>
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-3.jpg"
+                      alt="Santorini Island's Weekend Vacation"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      💎 Diamond Package – Kashmir Grand Royale Tour
+                    </h3>
+
+                    <p class="card-text">
+                      A luxury-packed tour of Kashmir’s finest. From shikara
+                      rides and glacier treks to peaceful gardens and valleys —
+                      all-in-one dream trip.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">
+                            Srinagar • Dal Lake • Sonamarg • Gulmarg • Pahalgam
+                            • Doodhpathri • Yusmarg • Mughal Gardens
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(40 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      $660
+                      <span>/ per person</span>
+                    </p>
+
+                    <button id="book" class="btn btn-secondary">
+                      <a href="./book.html">Book Now</a>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- pop up btn and pop up model -->
+
+            <div class="btn-wrapper">
+              <button class="view-btn" onclick="openPopup()">
+                View All Packages
+              </button>
+            </div>
+
+            <!-- Popup Modal -->
+            <div id="packagePopup" class="popup">
+              <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>Available Packages</h2>
+                <ul>
+                  <li>
+                    💛 <strong>Gold Package</strong> – Gulmarg, Tangmarg, Drung
+                    Waterfall
+                  </li>
+                  <li>
+                    🤍 <strong>Platinum Package</strong> – Pahalgam, Aru Valley,
+                    Betaab Valley, Lidder River
+                  </li>
+                  <li>
+                    💎 <strong>Diamond Package</strong> – Srinagar, Gulmarg,
+                    Sonamarg, Pahalgam, Yusmarg, Doodhpathri, Dal Lake
+                  </li>
+                </ul>
+                <p>
+                  ✨ Or customize your own trip with destinations of your
+                  choice!
+                </p>
+              </div>
+            </div>
+            <!-- till here -->
+          </div>
+        </section>
+
+        <!-- 
+        - #GALLERY
+      -->
+
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <p class="section-subtitle">Photo Gallery</p>
+
+            <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+            <p class="section-text">
+              Take a glimpse into Kashmir’s beauty through our gallery. These
+              captured moments speak louder than words — pure nature, adventure,
+              and unforgettable memories.
+            </p>
+
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-1.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-2.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-3.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-4.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-5.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Faq section -->
+
+        <section class="faq" id="faq">
+          <!-- Include Alpine.js CDN -->
+          <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+          ></script>
+
+          <section class="bg-white dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+              <h2
+                class="text-3xl font-extrabold text-gray-900 dark:text-white mb-6"
+              >
+                Frequently Asked Questions
+              </h2>
+              <p class="text-lg text-gray-600 dark:text-gray-300 mb-10">
+                Still curious? Here are some quick answers about Tehseen Tours.
+              </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4" x-data="{ open: null }">
+              <!-- Question 1 -->
+              <div
+                class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden transition-all"
+              >
+                <button
+                  @click="open === 1 ? open = null : open = 1"
+                  class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+                >
+                  <span>What is included in the tour package?</span>
+                  <svg
+                    :class="open === 1 ? 'rotate-180' : ''"
+                    class="w-5 h-5 transform transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div
+                  x-show="open === 1"
+                  x-collapse
+                  class="px-6 py-4 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 text-sm"
+                >
+                  The package includes transportation, accommodation, meals,
+                  guided tours, and activities as mentioned in the itinerary.
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div
+                class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden transition-all"
+              >
+                <button
+                  @click="open === 2 ? open = null : open = 2"
+                  class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+                >
+                  <span>Can I cancel or reschedule my booking?</span>
+                  <svg
+                    :class="open === 2 ? 'rotate-180' : ''"
+                    class="w-5 h-5 transform transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div
+                  x-show="open === 2"
+                  x-collapse
+                  class="px-6 py-4 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 text-sm"
+                >
+                  Yes, you can cancel or reschedule up to 48 hours before the
+                  tour start. For full details, please check our cancellation
+                  policy.
+                </div>
+              </div>
+
+              <!-- Question 3 -->
+              <div
+                class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden transition-all"
+              >
+                <button
+                  @click="open === 3 ? open = null : open = 3"
+                  class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+                >
+                  <span>Do I need to bring anything special for the trip?</span>
+                  <svg
+                    :class="open === 3 ? 'rotate-180' : ''"
+                    class="w-5 h-5 transform transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div
+                  x-show="open === 3"
+                  x-collapse
+                  class="px-6 py-4 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 text-sm"
+                >
+                  We recommend bringing a valid ID, weather-appropriate
+                  clothing, personal medication, and your adventurous spirit!
+                </div>
+              </div>
+
+              <!-- Question 4 -->
+              <div
+                class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden transition-all"
+              >
+                <button
+                  @click="open === 4 ? open = null : open = 4"
+                  class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+                >
+                  <span>Is the tour safe for kids and families?</span>
+                  <svg
+                    :class="open === 4 ? 'rotate-180' : ''"
+                    class="w-5 h-5 transform transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div
+                  x-show="open === 4"
+                  x-collapse
+                  class="px-6 py-4 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 text-sm"
+                >
+                  Absolutely! Travel with Tehseen Tours are designed with safety in mind,
+                  and many of our packages are family-friendly.
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- new cta stuff -->
+        <section class="bg-white py-20">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Numbers That Define Our Journey</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+              Our commitment to excellence speaks through the milestones we've achieved. Years of dedication, thousands of happy clients, and a passionate team make it all possible.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+              <div>
+                <h3 class="text-5xl font-bold text-blue-600">6+</h3>
+                <p class="mt-2 text-gray-700 font-medium">Years in Business</p>
+                <p class="text-sm text-gray-500">Building a legacy of memorable journeys.</p>
+              </div>
+              <div>
+                <h3 class="text-5xl font-bold text-blue-600">4821</h3>
+                <p class="mt-2 text-gray-700 font-medium">Projects Delivered</p>
+                <p class="text-sm text-gray-500">Creating unforgettable travel stories across the globe.</p>
+              </div>
+              <div>
+                <h3 class="text-5xl font-bold text-blue-600">37+</h3>
+                <p class="mt-2 text-gray-700 font-medium">Team Members</p>
+                <p class="text-sm text-gray-500">Dedicated to making your experience flawless and fun.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      
+
+      
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="cta" id="contact">
+          <div class="container">
+            <div class="cta-content">
+              <p class="section-subtitle">Call To Action</p>
+
+              <h2 class="h2 section-title">
+                Ready For Unforgatable Travel. Remember Us!
+              </h2>
+
+              <p class="section-text">
+                Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec
+                nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia
+                tenetur, aptent.
+              </p>
+            </div>
+
+            <button id="book" class="btn btn-secondary">
+              <a href="tel:+917889464616">Contact Us !</a>
+            </button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" alt="Tourly logo" />
+            </a>
+
+            <p class="footer-text">
+              With Travel With Tehseen, every journey is more than just a trip – it’s a beautifully crafted experience through the breathtaking landscapes of Kashmir, where comfort meets adventure and memories are made to last forever.
+            </p>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="contact-title">Contact Us</h4>
+
+            <p class="contact-text">Feel free to contact and reach us !!</p>
+
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <a href="tel:+917889464616" class="contact-link"
+                  >+917889464616</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <a href="mailto:tehseenbinakbar786@gmail.com" class="contact-link">Email Us!</a>
+                
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>Mahanoora, Chadoora</address>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-form">
+            <p class="form-text">
+              Subscribe our newsletter for more update , news & discounts!!
+            </p>
+
+            <form
+              action="https://formspree.io/f/xldjalop"
+              method="post"
+              class="form-wrapper"
+            >
+              <input
+                type="email"
+                name="email"
+                class="input-field"
+                placeholder="Enter Your Email"
+                required
+              />
+
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2025 & 26
+            <a href="https://linktr.ee/zoh.eb__" target="_blank"
+              >Zuhaib Rashid</a
+            >. All rights reserved
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="https://beamish-bubblegum-c900b0.netlify.app/assets/404" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="https://beamish-bubblegum-c900b0.netlify.app/assets/404" class="footer-bottom-link">Term & Condition</a>
+            </li>
+
+            <li>
+              <a href="#faq" class="footer-bottom-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
