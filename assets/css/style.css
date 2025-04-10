@@ -1478,19 +1478,7 @@ address {
   from { transform: translateY(50px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
-/* logo css */
-/* #logo{
-color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  text-shadow:
-    0 0 5px #00bfff,
-    0 0 10px #00bfff,
-    0 0 15px #00bfff,
-    0 0 20px #00bfff,
-    0 0 25px #00bfff;
-} */
+
 .neon-text {
   color: #00ffff;
   font-size: clamp(1rem, 3.3vw, 1.4rem); /* responsive size */
@@ -1546,4 +1534,8 @@ color: #ffffff;
 color: slateblue;
 font-weight: bolder;
 font-size: 1.5rem;
+}
+#pofhotel{
+  font-size: medium;
+  font-style: italic;
 }
