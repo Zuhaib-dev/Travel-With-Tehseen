@@ -1539,3 +1539,13 @@ font-size: 1.5rem;
   font-size: medium;
   font-style: italic;
 }
+h2.test{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: slategray;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
