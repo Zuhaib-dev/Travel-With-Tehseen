@@ -1735,3 +1735,8 @@ h2.test{
   color: #444;
   border-radius: 6px;
 }
+/*  footer logo */
+.footerlogo{
+  height: 100px;
+  width: auto;
+}
