@@ -1549,3 +1549,189 @@ h2.test{
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+#explore{
+  margin-top: 10px;
+}
+/* css for iternery popup */
+/* Popup Base */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.4s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 28px;
+  color: #777;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Title & Subtitle */
+.popup-content h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #ffb800;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.section p, .section ul {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Itinerary with arrow */
+.itinerary li {
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+
+.popup-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+/* Buttons */
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+.book-btn {
+  background: #ffb800;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #e6a700;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0 }
+  to { transform: translateY(0); opacity: 1 }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .popup-content {
+    padding: 20px;
+  }
+
+  .popup-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Explore Button */
+.explore-btn {
+  background-color: #ffb800;
+  color: #222;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #e6a700;
+}
+/* other tour */
+.popup-content h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #b95eff;
+}
+/* for other */
+.popup-content h2 {
+  font-size: 30px;
+  color: #e880fc;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section h3 {
+  color: #555;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.popup-content blockquote {
+  background: #f9f9f9;
+  border-left: 4px solid #c49bff;
+  margin: 10px 0;
+  padding: 10px 15px;
+  font-style: italic;
+  color: #444;
+  border-radius: 6px;
+}
