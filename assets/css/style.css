@@ -1741,6 +1741,15 @@ h2.test{
   width: auto;
 }
 /* marquee */
-.animate-marquee:hover {
-  animation-play-state: paused;
+.marquee-track {
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
