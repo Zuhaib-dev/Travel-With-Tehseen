@@ -1357,6 +1357,45 @@
           </div>
         </section>
 
+        <!-- Marque section -->
+        <section class="py-10 bg-white sm:py-16 lg:py-24 overflow-hidden">
+          <div class="relative">
+            <!-- Fading edges -->
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white via-transparent to-white z-10 pointer-events-none"></div>
+        
+            <!-- Marquee logos -->
+            <div class="animate-marquee whitespace-nowrap flex items-center gap-14 px-4 max-w-none">
+              <img class="h-14 object-contain" src="./assets/images/lalit-logo.png" alt="Logo 1" />
+              <img class="h-14 object-contain" src="./assets/images/Khyber-logo.png" alt="Logo 2" />
+              <img class="h-14 object-contain" src="./assets/images/Taj-logo.png" alt="Logo 3" />
+              <img class="h-14 object-contain" src="./assets/images/Sarovar_Hotels_Logo_.avif" alt="Logo 4" />
+              <img class="h-14 object-contain" src="" alt="Logo 5" />
+              <img class="h-14 object-contain" src="" alt="Logo 6" />
+              
+              <!-- Repeat for infinite scroll effect -->
+              <img class="h-14 object-contain" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/1/logo-1.png" alt="Logo 1" />
+              <img class="h-14 object-contain" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/1/logo-2.png" alt="Logo 2" />
+              <img class="h-14 object-contain" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/1/logo-3.png" alt="Logo 3" />
+            </div>
+          </div>
+        </section>
+        
+        <style>
+          @keyframes marquee {
+            0% {
+              transform: translateX(100%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
+        
+          .animate-marquee {
+            animation: marquee 15s linear infinite; /* Faster speed */
+          }
+        </style>
+        
+
         <!-- 
         - #CTA
       -->

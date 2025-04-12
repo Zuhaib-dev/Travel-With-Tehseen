@@ -1740,3 +1740,7 @@ h2.test{
   height: 100px;
   width: auto;
 }
+/* marquee */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
